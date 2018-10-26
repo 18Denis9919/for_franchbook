@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block head_title %} {{ title }} | Create {{block.super}} {% endblock head_title %}
+
+{% block content %}
+<div class="create-form">
+	<h2>Добавить граф</h2>
+	{% include "snippets/form-snippet.html" %}
+	<a href="{% url 'home' %}">Назад</a>
+</div>
+{% endblock %}

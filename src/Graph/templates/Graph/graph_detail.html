@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>{{object}}</h1>
+
+<div class="code">
+	<pre>{{file}}</pre>
+</div>
+
+<p><b>Создан:</b> {{object.timestamp}}</p>
+<a href="{% url 'graph:list' %}">Перейти к списку графов</a>
+{% endblock content %}

@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+<ul>
+	<li><a href="{% url 'graph:list' %}">Список графов</a></li>
+	<li><a href="{% url 'graph:create' %}">Создать граф</a></li>
+</ul>	
+{% endblock content %}

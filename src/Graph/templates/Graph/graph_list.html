@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Графы</h1>
+{% for obj in object_list %}
+	<h2><a href="{{obj.get_absolute_url}}">{{obj}}</a></h2>
+	<p><b>Создан:</b> {{obj.timestamp}}</p>
+
+{% endfor %}
+<a href="{% url 'home' %}">Назад</a>
+{% endblock content %}
